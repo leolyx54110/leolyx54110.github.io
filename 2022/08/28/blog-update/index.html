@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>LeoLiuの小屋</title>
+        <title>Blog Update | LeoLiuの小屋</title>
         <meta name="author" content="Leo Liu">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -120,35 +120,18 @@
 </nav>
                     </div>
                     <div id="main">
-                        <div id="home-head">
-    <div id="home-background" style="background-image: url(https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayato.jpg)"></div>
-    
-    <div id="home-info" class="home-info" @click="home_click">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>LeoLiuの小屋</h1>
-                <h3>Welcome</h3>
-                <h5></h5>
-            </div>
-        </span>
+                        
+<div class="article">
+    <div>
+        <h1>Blog Update </h1>
     </div>
-    
-</div>
-
-<div id="home-posts-wrap" class="">
-    <div id="home-posts">
-        <div id="posts">
-            
-
-<div class="post">
-    <a href="/2022/08/28/blog-update/">
-        <h2 class="post-title">Blog Update</h2>
-    </a>
-    <div class="category-and-date">
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2022/8/28
+        </span>
         
         <span class="category">
             <a href="/categories/技术/">
@@ -159,17 +142,24 @@
             </a>
         </span>
         
-        <span class="date">
+        
+        <span class="tags">
             <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
             </span>
-            2022/8/28
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
             
-            <h1 id="博客更新"><a href="#博客更新" class="headerlink" title="博客更新"></a>博客更新</h1><h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p>如大家所见，在博客建立之后只有一张图片，整个页面看起来非常的单薄。所以我添加了鼠标样式和鼠标点击特效。同时在本次更新最最重要的是使用了vercel加速访问。</p>
+            <span class="tag">
+                
+                <a href="/tags/blog/" style="color: #ff7d73">
+                    blog
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="博客更新"><a href="#博客更新" class="headerlink" title="博客更新"></a>博客更新</h1><h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p>如大家所见，在博客建立之后只有一张图片，整个页面看起来非常的单薄。所以我添加了鼠标样式和鼠标点击特效。同时在本次更新最最重要的是使用了vercel加速访问。</p>
 <p>本来还想加live2D的，但是有点拖响应速度，所以作罢。以后如果有机会还是想再加上的，毕竟没人能拒绝一个可爱的看板娘。</p>
 <!-- Comment... -->
 
@@ -198,175 +188,6 @@ p &#123;
 <p>先注册一个 <a target="_blank" rel="noopener" href="https://vercel.com/login">Vercel</a> 账号，通过 Github 注册<br>注册成功后跳转到你的首页，点击 New project，跳转后在 Import Git Repository 中选择你的 Hexo 博客，跳转后点击 Deploy 上传到 Vercel<br>上传完成点击 Goto Dashboard 来到项目主页，选择顶部的 Settings，在 Project Name 中更改你网站的名称。</p>
 <p>完成后vercel给了我一个<a target="_blank" rel="noopener" href="https://leolyx54110-github-io.vercel.app/%E7%9A%84%E9%93%BE%E6%8E%A5%E3%80%82%E7%94%A8%E8%BF%99%E4%B8%AA%E9%93%BE%E6%8E%A5%E8%AE%BF%E9%97%AE%E5%8F%AF%E4%BB%A5%E6%84%9F%E8%A7%89%E5%88%B0%E6%AF%94%E4%B9%8B%E5%89%8D%E7%9A%84github%E7%9B%B4%E8%BF%9E%E5%9D%97%E5%A4%9A%E4%BA%86%E3%80%82%EF%BC%88PS.%E5%85%B6%E5%AE%9E%E6%88%91%E4%BB%80%E4%B9%88%E6%84%9F%E8%A7%89%E9%83%BD%E6%B2%A1%E6%9C%89%EF%BC%8C%E6%AF%95%E7%AB%9F%E6%88%91%E5%9C%A8%E4%BA%92%E8%81%94%E7%BD%91%E4%B8%8A%E5%B7%B2%E7%BB%8F%E6%98%AF%E4%B8%80%E4%BD%8D%E5%B8%B8%E9%A9%BB%E9%A6%99%E6%B8%AF%E4%BA%BA%E4%BA%86%EF%BC%89">https://leolyx54110-github-io.vercel.app/的链接。用这个链接访问可以感觉到比之前的github直连块多了。（PS.其实我什么感觉都没有，毕竟我在互联网上已经是一位常驻香港人了）</a></p>
 
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/blog/" style="color: #00a596">
-                blog
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/08/28/blog-update/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2022/08/28/first-blog/">
-        <h2 class="post-title">First_blog</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/记录/">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                记录
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/8/28
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <h1 id="Hexo搭建博客完成！"><a href="#Hexo搭建博客完成！" class="headerlink" title="Hexo搭建博客完成！"></a>Hexo搭建博客完成！</h1><p>历经一个晚上的努力，使用的库从halo到hugo再到hexo，终于完成了此次博客的搭建。</p>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/blog/" style="color: #00a596">
-                blog
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/08/28/first-blog/" class="go-post">阅读全文</a>
-</div>
-
-<div class="post">
-    <a href="/2022/08/28/hello-world/">
-        <h2 class="post-title">Hello World</h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/8/28
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
-</code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-    </div>
-    <a href="/2022/08/28/hello-world/" class="go-post">阅读全文</a>
-</div>
-
-             
-<div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">
-            1
-        </span>
-        
-    </div>
-    <div class="next">
-        
-    </div>
-</div>
-        </div>
-    </div>
-    
-    <div id="home-card">
-        <div id="card-div">
-    <div class="card-style" style="width: 300px">
-        <div class="avatar">
-            <img src="https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayaka.jpg " alt="avatar">
-        </div>
-        <div class="name">
-            Leo Liu
-        </div>
-        <div class="descriptions">
-            
-            <div class="description">
-                雨だれ、石をうがつ
-            </div>
-            
-        </div>
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/leolyx54110">
-                    <i class="fa-brands fa-github fa-fw"></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=1443807042&site=qq&menu=true">
-                    <i class="fa-brands fa-qq fa-fw"></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://space.bilibili.com/34110301">
-                    <i class="fa-brands fa-bilibili fa-fw"></i>
-                </a>
-            </span>
-            
-        </div>
-        <div class="friend-links">
-            
-        </div>
-    </div>
-</div>
     </div>
     
 </div>
