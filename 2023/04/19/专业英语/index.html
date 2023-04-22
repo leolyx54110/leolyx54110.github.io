@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>Categories | LeoLiuの小屋</title>
+        <title>专业英语 | LeoLiuの小屋</title>
         <meta name="author" content="Leo Liu">
         <meta name="description" content="">
         <meta name="keywords" content="">
@@ -120,54 +120,21 @@
 </nav>
                     </div>
                     <div id="main">
-                         
-<div class="categories-tags">
-    
-    <div class="all-s">
-        
-        
-        <span>
-            <a href="/categories/学习/" style="background: #03a9f4">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                学习
-            </a>
+                        
+<div class="article">
+    <div>
+        <h1>专业英语 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/4/19
         </span>
         
-        
-        <span>
-            <a href="/categories/记录/" style="background: #ffa2c4">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                记录
-            </a>
-        </span>
-        
-        
-        <span>
-            <a href="/categories/技术/" style="background: #ffa2c4">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                技术
-            </a>
-        </span>
-        
-        
-        <span>
-            <a href="/categories/考研/" style="background: #00a596">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                </span>
-                考研
-            </a>
-        </span>
-        
-        
-        <span>
-            <a href="/categories/软考/" style="background: #00a596">
+        <span class="category">
+            <a href="/categories/软考/">
                 <span class="icon">
                     <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
                 </span>
@@ -175,10 +142,58 @@
             </a>
         </span>
         
-    </div>
-    <div id="archives">
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/英语/" style="color: #00bcd4">
+                    英语
+                </a>
+            </span>
+            
+        </span>
         
     </div>
+    <div class="content" v-pre>
+        <p>下个月软考，所以突击一下专业英语。本文的意义是对软考通上的文章进行精读。目前打算每天一篇吧，毕竟，就考一题，不至于花太多时间。</p>
+<span id="more"></span>
+
+<h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>For nearly ten years, the Unified Modeling Language （UML） has been the industry standard for visualizing, specifying, constructing, and documenting the （ ） of a software-intensive system. As the （&#x2F;） standard modeling language, the UML facilitates communication and reduces confusion among project （&#x2F;） .  The recent standardization of UML 2.0 has further extended the language’s scope and viability. Its inherent expressiveness allows users to （&#x2F;） everything from enterprise information systems and distributed Web-based applications to real-time embedded systems.<br>The UML is not limited to modeling software. In fact, it is expressive enough to model （&#x2F;） systems, such as workflow in the legal system, the structure and behavior of a patient healthcare system, software engineering in aircraft combat systems, and the design of hardware.<br>To understand the UML, you need to form a conceptual model of the language, and this requires learning three major elements: the UML’s basic building blocks, the rules that dictate how those building blocks may be put together, and some common mechanisms that apply throughout the UML.</p>
+<p>A.    classes				种类</p>
+<p>B.    components			组件</p>
+<p>C.	sequences			序列</p>
+<p>D.	artifacts				人工产品</p>
+<p>Unified Modeling Language    							统一建模与语言</p>
+<p>industry   				行业</p>
+<p>standard					  标准</p>
+<p>visualizing				可视化</p>
+<p>specifying					规范化说明</p>
+<p>constructing				构造</p>
+<p>documenting				文档化</p>
+<p>intensive					密集的</p>
+<p>facilitates			促进</p>
+<p>reduces				减少</p>
+<p>confusion			混淆</p>
+<p>standardization			标准化</p>
+<p>further				更远的，进一步</p>
+<p>extend				延长</p>
+<p>scope					范围</p>
+<p>viability					可行性</p>
+<p>inherent				内在的，固有的；</p>
+<p>expressiveness				表现</p>
+
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
 </div>
                          
 <footer id="footer">
@@ -235,6 +250,24 @@
         <script type="text/javascript" src="/js/fireworks.js"></script>
         <link rel="stylesheet" href="/css/mouse.css" />
         
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "ae93ad6385229e45dc75", clientSecret = "259349bec1994862601fa7f2c5c080e21660579c";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "LeoLiu.github.io",
+        owner: "leolyx54110",
+        admin: ["leolyx54110"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
 
     <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
