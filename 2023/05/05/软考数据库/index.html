@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>软考数据库 | LeoLiuの小屋</title>
+        <meta name="author" content="Leo Liu">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayaka.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+        
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LeoLiuの小屋</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LeoLiuの小屋</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>软考数据库 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/5/5
+        </span>
+        
+        <span class="category">
+            <a href="/categories/软考/">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                软考
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/数据库/" style="color: #03a9f4">
+                    数据库
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><h2 id="三级模式——两级映射"><a href="#三级模式——两级映射" class="headerlink" title="三级模式——两级映射"></a>三级模式——两级映射</h2><p>物理数据库—–&gt;内模式—–&gt;概念模式—–&gt;外模式</p>
+<p>内模式：主要关注如何存放数据</p>
+<p>概念模式(内模式映射)：用数据库时的表</p>
+<p>外模式(概念模式映射)：数据库的视图</p>
+<span id="more"></span>
+
+<h2 id="数据库的设计"><a href="#数据库的设计" class="headerlink" title="数据库的设计"></a>数据库的设计</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230505224059597.png" alt="image-20230505224059597"></p>
+<h3 id="ER模型"><a href="#ER模型" class="headerlink" title="ER模型"></a>ER模型</h3><p>实体 - 联系 - 属性</p>
+<p>集成的方法：</p>
+<p>多个局部ER图一次集成。</p>
+<p>逐步集成，累加。</p>
+<p>冲突及解决方法：</p>
+<p>属性冲突：属性域冲突和属性取值冲突</p>
+<p>命名冲突：同名异义和异名同义</p>
+<p>结构冲突：同一对象在不同应用中具有不同的抽象，同一实体在不同局部ER图中包含的额属性个数和属性排列次序不完全相同。</p>
+<p>关系模式：<br>一对一</p>
+<p>一对多</p>
+<p>多对多</p>
+<h3 id="关系代数"><a href="#关系代数" class="headerlink" title="关系代数"></a>关系代数</h3><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230508110248463.png" alt="image-20230508110248463"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230508110322382.png" alt="image-20230508110322382"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230508120125385.png" alt="image-20230508120125385"></p>
+<h3 id="函数依赖"><a href="#函数依赖" class="headerlink" title="函数依赖"></a>函数依赖</h3><p>  只要有u[x]&#x3D;v[x]就有u[y]&#x3D;v[y]，则y依赖x，x-&gt;y</p>
+<h3 id="键"><a href="#键" class="headerlink" title="键"></a>键</h3><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230508153653653.png" alt="image-20230508153653653"></p>
+<p>找候选键：</p>
+<ol>
+<li>画图</li>
+<li>找入度为0的店，若可遍历整个图，则为候选键</li>
+</ol>
+<h3 id="范式"><a href="#范式" class="headerlink" title="范式"></a>范式</h3><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230508165953701.png" alt="image-20230508165953701"></p>
+<p>BC范式：设R是一个关系模式。F是它的依赖集，R就属于BCNF当且仅当其F中每个依赖的决定因素必定包含R的某个候选码</p>
+<p>就是我中有你，你中有我。</p>
+<h2 id="并发控制"><a href="#并发控制" class="headerlink" title="并发控制"></a>并发控制</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509003841243.png" alt="image-20230509003841243"></p>
+<p>x锁:写锁</p>
+<p>s锁：读锁</p>
+<h2 id="数据库安全"><a href="#数据库安全" class="headerlink" title="数据库安全"></a>数据库安全</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509102505335.png" alt="image-20230509102505335"></p>
+<h2 id="数据备份"><a href="#数据备份" class="headerlink" title="数据备份"></a>数据备份</h2><p>静态备份：在数据库关闭状态下将数据全部复制下来。</p>
+<p>动态备份：用备份软件在数据库正常运行的状态下，备份文件。</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509102915909.png" alt="image-20230509102915909"></p>
+<p>完全备份：备份所有数据</p>
+<p>差量备份：仅备份上次完全备份之后变化的数据</p>
+<p>增量备份：备份上次备份之后变化的部分</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509103147864.png" alt="image-20230509103147864"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509104815399.png" alt="image-20230509104815399"></p>
+<h2 id="数据仓库和数据挖掘"><a href="#数据仓库和数据挖掘" class="headerlink" title="数据仓库和数据挖掘"></a>数据仓库和数据挖掘</h2><p>数据仓库：不改了的陈年数据</p>
+<p>数据库：一直在用在改的数据</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509111118100.png" alt="image-20230509111118100"></p>
+<h2 id="反规范化"><a href="#反规范化" class="headerlink" title="反规范化"></a>反规范化</h2><p>规范化会减少数据冗余，但是会把表不断拆分，增加了增删改查的时间。</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509114006025.png" alt="image-20230509114006025"></p>
+<h2 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h2><p>4V：</p>
+<p>valume</p>
+<p>velocity</p>
+<p>variety</p>
+<p>value</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509114941486.png" alt="image-20230509114941486"></p>
+
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2023 LeoLiuの小屋
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @Leo Liu
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 40%; right: 0;">
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26516590&auto=1&height=66"></iframe>
+</div>
+<script>
+    var t = document.getElementById('musicMouseDrag'); // 令上面的音乐模块为t
+    if(window.matchMedia("(max-width: 767px)").matches){
+   
+        t.style.visibility= 'hidden'// 当设备宽小于767像素时，判定为移动端，故隐藏音乐模块
+   
+    }else {
+   
+        t.style.visibility = 'visible'
+   
+    }
+   
+   </script>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <canvas
+            id="background"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1"
+        ></canvas>
+        <script src="/js/background.js"></script>
+        <script type = " text/javascript"  src = "/js/love-click.js" > </script>
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+        <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+        <script type="text/javascript" src="/js/fireworks.js"></script>
+        <link rel="stylesheet" href="/css/mouse.css" />
+        
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "ae93ad6385229e45dc75", clientSecret = "259349bec1994862601fa7f2c5c080e21660579c";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "LeoLiu.github.io",
+        owner: "leolyx54110",
+        admin: ["leolyx54110"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
+
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

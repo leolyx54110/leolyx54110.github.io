@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>软考计网 | LeoLiuの小屋</title>
+        <meta name="author" content="Leo Liu">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayaka.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+        
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LeoLiuの小屋</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LeoLiuの小屋</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>软考计网 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/5/9
+        </span>
+        
+        <span class="category">
+            <a href="/categories/软考/">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                软考
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/计网/" style="color: #ff7d73">
+                    计网
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="七层模型"><a href="#七层模型" class="headerlink" title="七层模型"></a>七层模型</h2><p>应用层：实现应用具体的功能</p>
+<p>表示层：数据的格式与表达</p>
+<p>会话层：建立、管理和终止会话</p>
+<p>传输层：端到端的连接</p>
+<p>网络层：分组传输和路由选择</p>
+<p>数据链路层：传输以帧为单位的信息</p>
+<p>物理层：二进制传输</p>
+<span id="more"></span>
+
+<p>主要设备及协议：</p>
+<p>应用层、表示层、会话层：FTP、HTTP、DNS、DHCP</p>
+<p>传输层：TCP、UDP</p>
+<p>网络层：三层交换机、路由器。ARP、RARP、IPICMP、IGMP</p>
+<p>数据链路层：网桥、交换机、网卡。PPTP、L2TP、SLIP、PPP</p>
+<p>物理层：中继器、集线器</p>
+<p>局域网只工作在下两层</p>
+<p>下两层也被叫做网络接口层</p>
+<p>上三层也被叫做应用层。</p>
+<p>所以四层模型被叫做：：应用层、传输层、Internet层、网络接口层</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509161519543.png" alt="image-20230509161519543"></p>
+<p>TCP三次握手。</p>
+<p>DHCP：IP地址分配</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509204731147.png" alt="image-20230509204731147"></p>
+<p>DNS：主机向本地域名服务器的查询用递归查询</p>
+<p>本地域名服务器向根域名服务器查询通常采用迭代查询</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509221420629.png" alt="image-20230509221420629"></p>
+<h2 id="网络规划设计"><a href="#网络规划设计" class="headerlink" title="网络规划设计"></a>网络规划设计</h2><h3 id="原则"><a href="#原则" class="headerlink" title="原则"></a>原则</h3><p>实用性</p>
+<p>开放性</p>
+<p>先进性</p>
+<h3 id="任务"><a href="#任务" class="headerlink" title="任务"></a>任务</h3><p>确定网络总体目标</p>
+<p>确定总体设计原则</p>
+<p>通信子网设计</p>
+<p>资源子网设计</p>
+<p>设备选型</p>
+<p>网络操作系统与服务器资源设备</p>
+<p>网络安全设计</p>
+<h3 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h3><p>可用性：网络或网络设备可用于执行预期任务时间所占总量的百分比</p>
+<p>可靠性：网络设备或计算机持续执行预定功能的可能性</p>
+<p>可恢复性：网络从故障中恢复的难易程度和时间</p>
+<p>适应性：指在用户改变应用要求时网络的应变能力</p>
+<p>可伸缩性：网络级数或设备随着用户需求的增长而扩充的能力</p>
+<h3 id="实施原则"><a href="#实施原则" class="headerlink" title="实施原则"></a>实施原则</h3><p>可靠性</p>
+<p>安全性</p>
+<p>高效性</p>
+<p>可扩展性</p>
+<h3 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h3><p>工程实施计划</p>
+<p>网络设备到货验收</p>
+<p>设备安装</p>
+<p>系统测试</p>
+<p>系统试运行</p>
+<p>用户培训</p>
+<p>系统转换</p>
+<h3 id="逻辑设计"><a href="#逻辑设计" class="headerlink" title="逻辑设计"></a>逻辑设计</h3><p>核心：IP地址方案，安全方案</p>
+<h3 id="物理设计"><a href="#物理设计" class="headerlink" title="物理设计"></a>物理设计</h3><p>物理结构图、布线方案</p>
+<p>设备清单</p>
+<p>测试</p>
+<h2 id="分层设计"><a href="#分层设计" class="headerlink" title="分层设计"></a>分层设计</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230509222514077.png" alt="image-20230509222514077"></p>
+<p> 顶层是核心层，作用是数据交换</p>
+<p>中间是汇聚层，网络访问策略控制、数据包处理、过滤、寻址</p>
+<p>最下面是接入层：数据交换</p>
+<h2 id="IP地址"><a href="#IP地址" class="headerlink" title="IP地址"></a>IP地址</h2><p>A类0.0.0.0起，第一段为网络号，后面三段为主机号</p>
+<p>B类128.0.0.0起，第一、二段为网络号，后面2段为主机号</p>
+<p>C类192.0.0.0起，第一、二、三段为网络号，后面1段为主机号</p>
+<p>D类224.0.0.0</p>
+<p>E类240.0.0.0</p>
+<p>子网掩码：有手就行，略</p>
+<h2 id="特殊含义的IP"><a href="#特殊含义的IP" class="headerlink" title="特殊含义的IP"></a>特殊含义的IP</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230510100923790.png" alt="image-20230510100923790"></p>
+<h2 id="无线网"><a href="#无线网" class="headerlink" title="无线网"></a>无线网</h2><p>接入方式：</p>
+<p>有接入点</p>
+<p>无接入点</p>
+<p>无线局域网：WLAN，802.11，wifi</p>
+<p>无线城域网：WMAN，802.16，wiMax</p>
+<p>无线广域网：WWAN，3g&#x2F;4g&#x2F;5g</p>
+<p>无线个人网：WPAN，802.15，bluetooth</p>
+<h2 id="网络接入"><a href="#网络接入" class="headerlink" title="网络接入"></a>网络接入</h2><h3 id="有线接入"><a href="#有线接入" class="headerlink" title="有线接入"></a>有线接入</h3><p>公用交换电话网络PSTN</p>
+<p>数字数据网DDN</p>
+<p>综合业务数字网ISDN</p>
+<p>非对称数字用户线路ADSL</p>
+<p>同轴光纤技术HFC</p>
+<h3 id="无线接入"><a href="#无线接入" class="headerlink" title="无线接入"></a>无线接入</h3><p>Wifi、Bluetooth、IrDA、WAPI</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230510105330941.png" alt="image-20230510105330941"></p>
+<h2 id="IPV6"><a href="#IPV6" class="headerlink" title="IPV6"></a>IPV6</h2><p>地址长度128位，空间增大了 $ 2^96 $  倍</p>
+<p>IP报文头部格式灵活</p>
+<p>简化了报文头部格式，字段只有8个</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230510110020457.png" alt="image-20230510110020457"></p>
+
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2023 LeoLiuの小屋
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @Leo Liu
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 40%; right: 0;">
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26516590&auto=1&height=66"></iframe>
+</div>
+<script>
+    var t = document.getElementById('musicMouseDrag'); // 令上面的音乐模块为t
+    if(window.matchMedia("(max-width: 767px)").matches){
+   
+        t.style.visibility= 'hidden'// 当设备宽小于767像素时，判定为移动端，故隐藏音乐模块
+   
+    }else {
+   
+        t.style.visibility = 'visible'
+   
+    }
+   
+   </script>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <canvas
+            id="background"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1"
+        ></canvas>
+        <script src="/js/background.js"></script>
+        <script type = " text/javascript"  src = "/js/love-click.js" > </script>
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+        <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+        <script type="text/javascript" src="/js/fireworks.js"></script>
+        <link rel="stylesheet" href="/css/mouse.css" />
+        
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "ae93ad6385229e45dc75", clientSecret = "259349bec1994862601fa7f2c5c080e21660579c";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "LeoLiu.github.io",
+        owner: "leolyx54110",
+        admin: ["leolyx54110"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
+
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

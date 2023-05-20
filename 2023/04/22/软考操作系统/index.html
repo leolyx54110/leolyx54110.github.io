@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>软考操作系统 | LeoLiuの小屋</title>
+        <meta name="author" content="Leo Liu">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayaka.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+        
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LeoLiuの小屋</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LeoLiuの小屋</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>软考操作系统 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/4/22
+        </span>
+        
+        <span class="category">
+            <a href="/categories/软考/">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                软考
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/操作系统/" style="color: #ff7d73">
+                    操作系统
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><img src="https://gitee.com/leonorma/leo/raw/master/image/1.png" alt="" />
+
+<p>作用：</p>
+<ol>
+<li>管理系统的硬件、软件、数据资源</li>
+<li>控制程序运行</li>
+<li>人机之间的接口</li>
+<li>应用软件与硬件之间的接口</li>
+</ol>
+<p>职能：</p>
+<ol>
+<li>进程管理</li>
+<li>存储管理</li>
+<li>文件管理</li>
+<li>作业管理</li>
+<li>设备管理</li>
+</ol>
+<span id="more"></span>
+
+<h2 id="进程管理"><a href="#进程管理" class="headerlink" title="进程管理"></a>进程管理</h2><img src="https://gitee.com/leonorma/leo/raw/master/image/2.png" alt="" />
+
+<p>给进程指定了几种状态，以便于给进程分配资源</p>
+<p>运行态：所有资源已经就位，在cpu中运行</p>
+<p>就绪态：除了cpu资源外，均有了</p>
+<p>等待态：除了cpu资源外，还缺别的资源</p>
+<p>在以上三态不满足时，提出了五态</p>
+<p>多了<strong>静止就绪态</strong>和<strong>静止阻塞态</strong>。</p>
+<p>目的是可以人为将程序挂起</p>
+<h2 id="前趋图"><a href="#前趋图" class="headerlink" title="前趋图"></a>前趋图</h2><p>略，有手就行</p>
+<h2 id="pv操作"><a href="#pv操作" class="headerlink" title="pv操作"></a>pv操作</h2><p>互斥：某一时刻，只允许这个程序使用这个资源</p>
+<p>同步：速度有差异，在一定情况下等待。最后一起完成。</p>
+<p>同步是在互斥的基础上，对资源的有序访问。互斥是某一资源某一试刻，只允许一个访问者访问。</p>
+<p>临界资源：进程间需要互斥访问的资源</p>
+<p>临界区：每个进程中访问临界找资源的那段代码</p>
+<p>信号量：就是个变量。</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230424170318139.png" alt="image-20230424170318139"></p>
+<p>P操作是申请资源，先让s-1，如果结果小于0说明没有已经没有资源了，要阻塞。</p>
+<p>v操作是释放资源，所以+1。之所以要判断s&lt;&#x3D;0是因为，系统初始的资源至少为1 ，如果没人申请，再怎么说s也应该是1，所以当s&lt;&#x3D;0时，必定前面有人申请，且阻塞了。</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230424222227578.png" alt="image-20230424222227578"></p>
+<h2 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h2><p>程序设计不当，如果一个进程在等待一件不可能发生的事，那就是死锁了。如果一个或者多个进程产生了死锁，就会照成系统死锁。所有的资源都在等待系统的资源给它分配资源，但是又不愿意释放自己已经占有的资源，就会造成死锁。</p>
+<h3 id="死锁预防"><a href="#死锁预防" class="headerlink" title="死锁预防"></a>死锁预防</h3><p>首先死锁有四大条件：互斥、保持和等待、不剥夺、环路等待。</p>
+<p>如果能打破这四大条件，就可以预防死锁</p>
+<h3 id="死锁的避免"><a href="#死锁的避免" class="headerlink" title="死锁的避免"></a>死锁的避免</h3><p>第一种是<strong>有序资源分配法</strong>：先把资源给a，a做完再给b，依次进行</p>
+<p>第二种是银行家算法，也是最常用的</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230427155530544.png" alt="image-20230427155530544"></p>
+<p>就是分配之前会对进程进行评估。</p>
+<h2 id="存储管理"><a href="#存储管理" class="headerlink" title="存储管理"></a>存储管理</h2><p>存储分配算法：</p>
+<p>首次适应法，按顺序分</p>
+<p>最佳适应法，按容量递增的顺序排序，再按顺序分</p>
+<p>最差适应法，按容量递减排序，在按顺序分</p>
+<p>循环首次适应法</p>
+<h3 id="页式存储"><a href="#页式存储" class="headerlink" title="页式存储"></a>页式存储</h3><p>优点：利用率高，碎片小，分配管理简单</p>
+<p>缺点：增加了系统开销，可能产生抖动</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230501182017217.png" alt="image-20230501182017217"></p>
+<p>页面大小也就是业内地址的位数</p>
+<h3 id="段式存储"><a href="#段式存储" class="headerlink" title="段式存储"></a>段式存储</h3><p>优点：多道程序共享内存，各段程序修改互不影响</p>
+<p>缺点：内存利用率低，内存碎片浪费大</p>
+<p>段式存储和页式存储的区别：按逻辑分块，每一个段长度可能不一样。</p>
+<h3 id="段页式存储"><a href="#段页式存储" class="headerlink" title="段页式存储"></a>段页式存储</h3><p>先分段再分页</p>
+<h2 id="页面置换算法"><a href="#页面置换算法" class="headerlink" title="页面置换算法"></a>页面置换算法</h2><p>最优算法(OPT)</p>
+<p>随机算法(RAND)</p>
+<p>先进先出算法(FIFO)</p>
+<p>最少使用算法(LRU)</p>
+<p>抖动：加了页面数量，缺页率反而比不加要多。</p>
+<p>指令只会产生一次缺页中断，而操作数，则是占用几个内存就产生几次。</p>
+<h2 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h2><p>一般是13个结点</p>
+<h2 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230505091542073.png" alt="image-20230505091542073"></p>
+<h2 id="文件管理——空闲空间"><a href="#文件管理——空闲空间" class="headerlink" title="文件管理——空闲空间"></a>文件管理——空闲空间</h2><ol>
+<li>空闲区表法</li>
+<li>空闲链表法</li>
+<li>位示图法</li>
+<li>成组链接法</li>
+</ol>
+
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2023 LeoLiuの小屋
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @Leo Liu
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 40%; right: 0;">
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26516590&auto=1&height=66"></iframe>
+</div>
+<script>
+    var t = document.getElementById('musicMouseDrag'); // 令上面的音乐模块为t
+    if(window.matchMedia("(max-width: 767px)").matches){
+   
+        t.style.visibility= 'hidden'// 当设备宽小于767像素时，判定为移动端，故隐藏音乐模块
+   
+    }else {
+   
+        t.style.visibility = 'visible'
+   
+    }
+   
+   </script>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <canvas
+            id="background"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1"
+        ></canvas>
+        <script src="/js/background.js"></script>
+        <script type = " text/javascript"  src = "/js/love-click.js" > </script>
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+        <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+        <script type="text/javascript" src="/js/fireworks.js"></script>
+        <link rel="stylesheet" href="/css/mouse.css" />
+        
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "ae93ad6385229e45dc75", clientSecret = "259349bec1994862601fa7f2c5c080e21660579c";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "LeoLiu.github.io",
+        owner: "leolyx54110",
+        admin: ["leolyx54110"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
+
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

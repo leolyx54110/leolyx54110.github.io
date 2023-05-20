@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <title>软件工程 | LeoLiuの小屋</title>
+        <meta name="author" content="Leo Liu">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link rel="icon" href="https://raw.githubusercontent.com/leolyx54110/LeoLiu.github.io/master/image/ayaka.jpg">
+        <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
+        <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+        
+        <script src="https://cdn.staticfile.org/vue/3.2.33/vue.global.prod.min.js"></script>
+        
+    <meta name="generator" content="Hexo 6.2.0"></head>
+    <body>
+        <div id="loading" style="height:100vh;width:100vw;position:fixed;display:flex;z-index:200;justify-content:space-between;background:#fff;transition:opacity 0.3s ease-out"><div style="position:fixed;height:100vh;width:100vw;display:flex;justify-content:center;align-items:center"><div id="loadcontent" style="width:50vmin;height:50vmin;padding:50px;border-radius:50%;display:flex;justify-content:center;align-items:center;border:solid 10px #a3ddfb;text-align:center"><div><h2>LOADING...</h2><p style="word-break:keep-all">加载过慢请开启缓存(浏览器默认开启)</p><div><img alt="loading" src="/loading.gif"></div></div></div></div></div>
+        <div id="layout">
+            <i data-fa-symbol="calendar-solid" class="fa-solid fa-calendar fa-fw"></i>
+            <i data-fa-symbol="bookmark-solid" class="fa-solid fa-bookmark fa-fw"></i>
+            <i data-fa-symbol="tags-solid" class="fa-solid fa-tags fa-fw"></i>
+            <transition name="into">
+                <div v-show="show_page" style="display: -not-none">
+                    <div id="menu_show">
+                         
+<nav id="menu">
+    <div class="desktop-menu">
+        <a href="/">
+            <span class="title">LeoLiuの小屋</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;about</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;tags</span>
+        </a>
+        
+    </div>
+    <div :class="'phone-menu ' + menu_show" id="phone-menu">
+        <div class="curtain" @click="menu_show = !menu_show" v-show="menu_show"></div>
+        <div :class="'title'" @click="menu_show = !menu_show">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LeoLiuの小屋</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menu_show">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">about</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+                    </div>
+                    <div id="main">
+                        
+<div class="article">
+    <div>
+        <h1>软件工程 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+            </span>
+            2023/5/16
+        </span>
+        
+        <span class="category">
+            <a href="/categories/软考/">
+                <span class="icon">
+                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
+                软考
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/软件工程/" style="color: #ffa2c4">
+                    软件工程
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <h1 id="软件工程"><a href="#软件工程" class="headerlink" title="软件工程"></a>软件工程</h1><h2 id="瀑布模型-SDLC"><a href="#瀑布模型-SDLC" class="headerlink" title="瀑布模型(SDLC)"></a>瀑布模型(SDLC)</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230516105434759.png" alt="image-20230516105434759"></p>
+<p>瀑布模型是结构化模型，十有八九会导致项目失败。要么延期要么成本超支要么做不下去。</p>
+<p>被时代抛弃的原因：需求阶段难以把控。软件的需求往往都是不明确的。</p>
+<p>适用于需求明确，二度开发的情况。</p>
+<span id="more"></span>
+
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230516105715812.png" alt="image-20230516105715812"></p>
+<h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><p>先做一个简易的界面或系统出来，给用户看。让用户提出问题，精准的知道用户想要什么。</p>
+<p>这样不断演化，就成了演化模型</p>
+<h2 id="螺旋模型"><a href="#螺旋模型" class="headerlink" title="螺旋模型"></a>螺旋模型</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230516163604642.png" alt="image-20230516163604642"></p>
+<p>引入了风险分析</p>
+<h2 id="V模型"><a href="#V模型" class="headerlink" title="V模型"></a>V模型</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230516164539894.png" alt="image-20230516164539894"></p>
+<p>和瀑布模型很像</p>
+<p>在分析阶段就可以写系统测试和验收测试的测试计划了</p>
+<p>概要阶段可以写集成测试的计划</p>
+<p>详细设计写单元测试的计划</p>
+<h2 id="喷泉模型和RAD"><a href="#喷泉模型和RAD" class="headerlink" title="喷泉模型和RAD"></a>喷泉模型和RAD</h2><p>面向对象，所以有迭代和无间隙的特性</p>
+<p>RAD：快速开发模型。由瀑布模型(SDLC)和构件模型(CBSD)组成</p>
+<h2 id="构建组装模型-CBSD"><a href="#构建组装模型-CBSD" class="headerlink" title="构建组装模型(CBSD)"></a>构建组装模型(CBSD)</h2><p>把软件开发中的各个模块都可以做成标准的构件，再把构建组装。提高了构建的复用性</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517091702446.png" alt="image-20230517091702446"></p>
+<h2 id="统一过程-UP"><a href="#统一过程-UP" class="headerlink" title="统一过程(UP)"></a>统一过程(UP)</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517091724885.png" alt="image-20230517091724885"></p>
+<p>用例驱动</p>
+<p>先挖掘用例，在设计用例。</p>
+<h2 id="敏捷开发方法"><a href="#敏捷开发方法" class="headerlink" title="敏捷开发方法"></a>敏捷开发方法</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517092403710.png" alt="image-20230517092403710"></p>
+<h2 id="需求分类"><a href="#需求分类" class="headerlink" title="需求分类"></a>需求分类</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517093200307.png" alt="image-20230517093200307"></p>
+<h2 id="结构化设计"><a href="#结构化设计" class="headerlink" title="结构化设计"></a>结构化设计</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517094544539.png" alt="image-20230517094544539"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517094731124.png" alt="image-20230517094731124"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517095034364.png" alt="image-20230517095034364"></p>
+<h2 id="软件测试"><a href="#软件测试" class="headerlink" title="软件测试"></a>软件测试</h2><p>测试原则：</p>
+<p>尽早，不断进行测试</p>
+<p>避免自己测试自己的程序</p>
+<p>既要选有效的测试也要选不合理的数据</p>
+<p>修改后应进行回归测试</p>
+<p>未发现的错误数量与该程序已发现错误数成正比。</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517095320743.png" alt="image-20230517095320743"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517101027468.png" alt="image-20230517101027468"></p>
+<p>黑盒测试法：不知道内部是啥，只是给输入出输出</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517102851691.png" alt="image-20230517102851691"></p>
+<p>先做单元测试，在做集成测试</p>
+<p>确认测试：确认需求</p>
+<p>系统测试偏重压力和性能</p>
+<h2 id="McCabe复杂度"><a href="#McCabe复杂度" class="headerlink" title="McCabe复杂度"></a>McCabe复杂度</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517103725032.png" alt="image-20230517103725032"></p>
+<p>m为有向边，n为节点</p>
+<h2 id="系统运行与维护"><a href="#系统运行与维护" class="headerlink" title="系统运行与维护"></a>系统运行与维护</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517104139506.png" alt="image-20230517104139506"></p>
+<h2 id="软件过程改进CMMI"><a href="#软件过程改进CMMI" class="headerlink" title="软件过程改进CMMI"></a>软件过程改进CMMI</h2><p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517104749641.png" alt="image-20230517104749641"></p>
+<p>由CMM发展而来</p>
+<p>等级：</p>
+<p>1 混乱级</p>
+<p>2 已管理级。项目级</p>
+<p>3 如图，组织级</p>
+<h2 id="项目管理"><a href="#项目管理" class="headerlink" title="项目管理"></a>项目管理</h2><p>gantt图不能表现事件逻辑关系</p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517105913889.png" alt="image-20230517105913889"></p>
+<p><img src="C:\Users\14438\AppData\Roaming\Typora\typora-user-images\image-20230517110154893.png" alt="image-20230517110154893"></p>
+
+    </div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
+        </div>
+    </div>
+    
+</div>
+                         
+<footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            © 20xx - 2023 LeoLiuの小屋
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            @Leo Liu
+        </div>
+        <div></div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo Engine</a> & <a
+                target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+<div id="musicMouseDrag" style="position:fixed; z-index: 9999; bottom: 40%; right: 0;">
+    <div id="musicDragArea" style="position: absolute; top: 0; left: 0; width: 100%;height: 10px;cursor: move; z-index: 10;"></div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26516590&auto=1&height=66"></iframe>
+</div>
+<script>
+    var t = document.getElementById('musicMouseDrag'); // 令上面的音乐模块为t
+    if(window.matchMedia("(max-width: 767px)").matches){
+   
+        t.style.visibility= 'hidden'// 当设备宽小于767像素时，判定为移动端，故隐藏音乐模块
+   
+    }else {
+   
+        t.style.visibility = 'visible'
+   
+    }
+   
+   </script>
+                    </div>
+                </div>
+            </transition>
+            <div id="img_show">
+                <img id="img_content" alt="img_show">
+            </div>
+        </div>
+        <script src="https://cdn.staticfile.org/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="/js/particlex.js"></script>
+        <script src="/js/showimg.js"></script>
+        <canvas
+            id="background"
+            style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1"
+        ></canvas>
+        <script src="/js/background.js"></script>
+        <script type = " text/javascript"  src = "/js/love-click.js" > </script>
+        <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+        <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+        <script type="text/javascript" src="/js/fireworks.js"></script>
+        <link rel="stylesheet" href="/css/mouse.css" />
+        
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "ae93ad6385229e45dc75", clientSecret = "259349bec1994862601fa7f2c5c080e21660579c";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "LeoLiu.github.io",
+        owner: "leolyx54110",
+        admin: ["leolyx54110"],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: false,
+        
+    })
+    gitalk.render("gitalk-container")
+</script>
+
+
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/hibiki.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":100},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
